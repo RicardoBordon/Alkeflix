@@ -25,11 +25,11 @@ function Buscador () {
 
     return(
         <>
-        <form className='d-flex align-items-center' onSubmit={submitHandler}>
+        <form className='d-flex' role="search" onSubmit={submitHandler}>
         <label className='form-label mb-0 mx-2'>
-            <input className='form-control' type='text' name="keyword" placeholder="Escríbe una palabra clave..."/>
+            <input className='form-control me-2' type='text' name="keyword" placeholder="Escríbe una palabra clave..."/>
         </label>
-        <button className="btn btn-primary" type="submit">Buscar</button>
+        <button className="btn btn-outline-primary" type="submit">Buscar</button>
         </form>
         </>
     )

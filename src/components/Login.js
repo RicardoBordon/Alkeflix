@@ -44,8 +44,9 @@ function Login() {
     return (
         <>
             { token && <Navigate to={"/listado"}/>}
-            <h2>Formulario de Login</h2>
-            <form onSubmit={submitHandler}>
+            <div className='container text-center'>
+            <h2 className='h2'>Formulario de Login</h2>
+            <form className='p-4' onSubmit={submitHandler}>
             <label>
                 <span>Correo electrónico:</span><br />
                 <input type="email" name="email"></input>
@@ -58,6 +59,7 @@ function Login() {
             <br />
             <button type="submit">Ingresar</button>
         </form>
+        </div>
         </>
     )
 }
